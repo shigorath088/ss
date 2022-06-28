@@ -1,0 +1,242 @@
+html {
+    background-image: url(images/cosmos.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.section__title {
+    font-size: 70px;
+    font-weight: 400;
+    color: #b4efb4;
+    text-shadow: 0px 0px 5px #9cd393, 0px 0px 10px #9cd393, 0px 0px 10px #9cd393,
+    0px 0px 20px #9cd393;
+}
+.menu-mobile:after {
+    content: "\f0c9";
+    font-family: "FontAwesome", serif;
+    font-size: 38px;
+    line-height: 38px;
+    padding: 0;
+    color: #FFF;
+    float: right;
+    position: relative;
+    transform: translateY(-25%);
+    text-shadow: 0px 0px 5px #9cd393, 0px 0px 10px #9cd393, 0px 0px 10px #9cd393,
+    0px 0px 20px #9cd393;
+}
+.menu-dropdown-icon:before {
+    content: "\f078";
+    font-family: "FontAwesome", serif;
+    display: none;
+    cursor: pointer;
+    float: right;
+    padding: 10px 20px;
+    margin: 10px;
+    background: #9cd393;
+    color: #FFF;
+    font-size: 20px;
+    text-shadow: 0px 0px 5px #9cd393, 0px 0px 10px #9cd393, 0px 0px 10px #9cd393,
+    0px 0px 20px #9cd393;
+}
+.menu > ul {
+    margin: 0 auto;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    text-shadow: 0px 0px 5px #9cd393, 0px 0px 10px #9cd393, 0px 0px 10px #9cd393,
+    0px 0px 20px #9cd393;
+}
+.menu > ul:before,
+.menu > ul:after {
+    content: "";
+    display: table;
+}
+.menu > ul:after {
+    clear: both;
+}
+.menu > ul > li {
+    float: left;
+    background: #303330;
+    padding: 0;
+    margin: 0;
+    transition: .2s ease-in-out;
+    text-shadow: 0px 0px 5px #9cd393, 0px 0px 10px #9cd393, 0px 0px 10px #9cd393,
+    0px 0px 20px #9cd393;
+    border-style: solid;
+    border-color: #9cd393;
+}
+.menu > ul > li a,
+.menu-mobile {
+    text-decoration: none;
+    padding: 20px 30px;
+    display: block;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    transition: .2s ease-in-out;
+    text-shadow: 0px 0px 5px #9cd393, 0px 0px 10px #9cd393, 0px 0px 10px #9cd393,
+    0px 0px 20px #9cd393;
+}
+.menu-mobile {
+    display: none;
+}
+.menu > ul > li:hover {
+    background: #9ec7ae;
+    border-style: solid;
+    border-color: #ffffff;
+}
+.menu > ul > li:hover a {
+    color: #ffffff;
+    border-style: solid;
+    border-color: #9cd393;
+}
+.menu > ul > li > ul {
+    display: none;
+    width: 30%;
+    background: #303330;
+    padding: 5px;
+    position: absolute;
+    z-index: 99;
+    left: 2px;
+    margin: 0px;
+    list-style: none;
+    box-sizing: content-box;
+    border-style: solid;
+    border-color: #9cd393;
+    text-shadow: 0px 0px 5px #9cd393, 0px 0px 10px #9cd393, 0px 0px 10px #9cd393,
+    0px 0px 20px #9cd393;
+}
+.menu > ul > li > ul:before,
+.menu > ul > li > ul:after {
+    content: "";
+    display: table;
+}
+.menu > ul > li > ul:after {
+    clear: both;
+}
+.menu > ul > li > ul > li {
+    margin: 0;
+    padding-bottom: 0;
+    list-style: none;
+    width: 25%;
+    background: none;
+    float: left;
+}
+.menu > ul > li > ul > li a {
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid #33b745;
+    text-shadow: 0px 0px 5px #9cd393, 0px 0px 10px #9cd393, 0px 0px 10px #9cd393,
+    0px 0px 20px #9cd393;
+}
+.menu > ul > li > ul > li a:hover {
+    color: #00ff88;
+    border-bottom: 1px solid #000;
+    text-shadow: 0px 0px 5px #9cd393, 0px 0px 10px #9cd393, 0px 0px 10px #9cd393,
+    0px 0px 20px #9cd393;
+}
+.menu > ul > li > ul > li > ul {
+    display: block;
+    padding: 0;
+    margin: 10px 0 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+.menu > ul > li > ul > li > ul:before,
+.menu > ul > li > ul > li > ul:after {
+    content: "";
+    display: table;
+}
+.menu > ul > li > ul > li > ul:after {
+    clear: both;
+}
+.menu > ul > li > ul > li > ul > li {
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+.menu > ul > li > ul > li > ul > li a {
+    border: 0;
+    padding: 10px 12px;
+    font-size: 18px;
+}
+.menu > ul > li > ul > li > ul > li a:hover {
+    border: 0;
+}
+.menu > ul > li > ul.normal-sub {
+    width: 300px;
+    left: auto;
+    padding: 20px;
+}
+.menu > ul > li > ul.normal-sub > li {
+    width: 100%;
+}
+.menu > ul > li > ul.normal-sub > li a {
+    border: 0;
+    padding: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .menu-container {
+        width: 100%;
+    }
+    .menu-mobile {
+        display: block;
+    }
+    .menu-dropdown-icon:before {
+        display: block;
+    }
+    .menu > ul {
+        display: none;
+    }
+    .menu > ul > li {
+        width: 100%;
+        float: none;
+        display: block;
+        background: #BFE2FF;
+        border-top: 2px solid #FFF;
+        border-bottom: 2px solid #FFF;
+        text-shadow: 0px 0px 5px #9cd393, 0px 0px 10px #9cd393, 0px 0px 10px #9cd393,
+        0px 0px 20px #9cd393;
+    }
+    .menu > ul > li a {
+        padding: 20px;
+        width: 100%;
+        display: block;
+        color: #000;
+        text-shadow: 0px 0px 5px #9cd393, 0px 0px 10px #9cd393, 0px 0px 10px #9cd393,
+        0px 0px 20px #9cd393;
+    }
+    .menu > ul > li > ul {
+        position: relative;
+    }
+    .menu > ul > li > ul.normal-sub {
+        width: 100%;
+
+    }
+    .menu > ul > li > ul > li {
+        float: none;
+        width: 100%;
+    }
+    .menu > ul > li > ul:not(.normal-sub) > li {
+        margin-top: 20px;
+    }
+    .menu > ul > li > ul > li:first-child {
+        margin: 0;
+    }
+    .menu > ul > li > ul > li > ul {
+        position: relative;
+    }
+    .menu > ul > li > ul > li > ul > li {
+        float: none;
+    }
+    .menu .show-on-mobile {
+        display: block;
+    }
+}
