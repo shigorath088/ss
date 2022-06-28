@@ -19,3 +19,5 @@ $(document).ready(function() {
         e.preventDefault();
     });
 });
+let a = 0;
+// Тест
